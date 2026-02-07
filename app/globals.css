@@ -1,26 +1,201 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import 'react-circular-progressbar/dist/styles.css';
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@plugin 'tailwind-scrollbar' {
+    nocompatible: true;
+    preferredstrategy: 'pseudoelements';
+}
+
+@custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --color: #000000;
+    --background: #e9f0ff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --radius: 0.625rem;
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+    --chart-1: oklch(0.646 0.222 41.116);
+    --chart-2: oklch(0.6 0.118 184.704);
+    --chart-3: oklch(0.398 0.07 227.392);
+    --chart-4: oklch(0.828 0.189 84.429);
+    --chart-5: oklch(0.769 0.188 70.08);
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+
+    --breakpoint-xs: 320px;
+    /*------------ 20rem */
+    --breakpoint-s: 375px;
+    /*------------- 23.438rem */
+    --breakpoint-s340: 340px;
+    /*---------- 22.5rem */
+    --breakpoint-s400: 400px;
+    /*---------- 25rem */
+    --breakpoint-s430: 430px;
+    /*---------- 26.875rem */
+    --breakpoint-m: 480px;
+    /*------------- 30rem */
+    --breakpoint-m532: 532px;
+    /*---------- 31.25rem */
+    --breakpoint-sm: 640px;
+    /*------------ 40rem */
+    --breakpoint-md: 768px;
+    /*------------ 48rem */
+    --breakpoint-mdl: 900px;
+    /*----------- 56.25rem */
+    --breakpoint-l: 992px;
+    /*------------- 62rem */
+    --breakpoint-lg: 1024px;
+    /*----------- 64rem */
+    --breakpoint-xlg: 1120px;
+    /*---------- 70rem */
+    --breakpoint-1189: 1189px;
+    /*--------- 74.3125rem */
+    --breakpoint-tablet: 1190px;
+    /*----- 74.375rem */
+    --breakpoint-xl: 1280px;
+    /*----------- 80rem */
+    --breakpoint-xll: 1328px;
+    /*---------- 83rem */
+    --breakpoint-xlll: 1397px;
+    /*---------- 85.375rem */
+    --breakpoint-1xl: 1440px;
+    /*---------- 90rem */
+    --breakpoint-2xl: 1536px;
+    /*---------- 96rem */
+
+    --font-primary: 'DM Sans', sans-serif;
+    --font-secondary: 'Lato', sans-serif;
+    --font-tertiary: 'Inter', sans-serif;
+    --shadow-shadow1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer base {
+    * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+
+    html {
+        background: var(--background);
+        color: var(--color);
+        font-family: 'DM Sans', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    .click {
+        @apply cursor-pointer transition-all duration-300 ease-in-out will-change-transform hover:scale-105 active:scale-95;
+    }
+
+    @keyframes shimmer {
+        0% {
+            background-position: -200% 0;
+        }
+
+        100% {
+            background-position: 200% 0;
+        }
+    }
+
+    .shimmer {
+        background: linear-gradient(110deg, #e9f0ff 8%, #f0f5ff 18%, #e9f0ff 33%);
+        background-size: 200% 100%;
+        animation: shimmer 1.5s infinite linear;
+    }
+
+    .button_lineargradient {
+        background: linear-gradient(135deg, #1e4cf0 0%, #4e7cff 100%);
+        box-shadow: 0 4px 12px 0 rgba(30, 76, 240, 0.25);
+    }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+    .font_dmSans {
+        font-family: var(--font-primary);
+    }
+
+    .font-secondary {
+        font-family: var(--font-secondary);
+    }
+
+    .font-tertiary {
+        font-family: var(--font-tertiary);
+    }
+
+    .btn-sell {
+        border-radius: 0.5rem;
+        background: linear-gradient(135deg, #1e4cf0 0%, #4e7cff 100%);
+        box-shadow: 0 4px 12px 0 rgba(30, 76, 240, 0.25);
+    }
+
+    .btn-pointer {
+        @apply cursor-pointer transition-all duration-300 ease-in-out will-change-transform hover:scale-105 active:scale-95;
+    }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "predictify",
+  "name": "signalx",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,9 +9,37 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@radix-ui/react-select": "*",
+    "@radix-ui/react-visually-hidden": "*",
+    "@reown/appkit": "*",
+    "@reown/appkit-adapter-wagmi": "*",
+    "@t3-oss/env-nextjs": "*",
+    "@tanstack/react-query": "*",
+    "axios": "*",
+    "chart.js": "*",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "clsx": "*",
+    "copy-to-clipboard": "*",
+    "lottie-react": "*",
+    "lucide-react": "*",
+    "motion": "*",
     "next": "16.1.6",
+    "radix-ui": "*",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-chartjs-2": "*",
+    "react-circular-progressbar": "*",
+    "react-dom": "19.2.3",
+    "react-icons": "*",
+    "react-loader-spinner": "*",
+    "socket.io-client": "*",
+    "sonner": "*",
+    "tailwind-merge": "*",
+    "tailwind-scrollbar": "*",
+    "tw-animate-css": "*",
+    "viem": "*",
+    "wagmi": "*",
+    "zod": "*",
+    "zustand": "*"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
