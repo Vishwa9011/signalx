@@ -4,7 +4,7 @@ import { useState } from 'react';
 import InfoIcon from '@/constants/svgs/InfoIcon';
 import BitcoinIcon from '@/constants/svgs/BitcoinIcon';
 import { HOW_IT_WORKS_DATA } from '@/constants/how-it-works';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/shared/animate-ui/components/radix/popover';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 
 const QuestionHeader = () => {
     return (

@@ -8,7 +8,7 @@ import ConfirmSellModal from './ConfirmSellModal';
 import ArrowRightUP from '@/constants/svgs/ArrowRightUP';
 import useUserActiveBets from '@/features/trades/hooks/useUserActiveBets';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
-import { Dialog, DialogClose, DialogContent, DialogTrigger, DialogTitle } from '@/components/shared/animate-ui/components/radix/dialog';
+import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 const SellBetModal = () => {
     const { data, summary } = useUserActiveBets();

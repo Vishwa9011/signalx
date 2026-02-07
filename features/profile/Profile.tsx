@@ -10,10 +10,9 @@ import { truncateString } from '@/lib';
 import {
     Tabs,
     TabsContent,
-    TabsContents,
     TabsList,
     TabsTrigger,
-} from '@/components/shared/animate-ui/components/animate/tabs';
+} from '@/components/ui/tabs';
 import TradeHistory from '@/features/trades/TradeHistory';
 import Leaderboard from '@/features/leaderboard/Leaderboard';
 import { useEffect } from 'react';
@@ -66,7 +65,7 @@ const Profile = () => {
                 </div>
 
                 <div>
-                    <Tabs>
+                    <Tabs defaultValue="account">
                         <div className="flex items-center justify-center">
                             <TabsList className="shadow-shadow1 h-[3.3rem] gap-4 rounded-[1048575rem] border border-[#E9EDF5] bg-white px-2 will-change-transform">
                                 <TabsTrigger
@@ -84,14 +83,12 @@ const Profile = () => {
                             </TabsList>
                         </div>
                         <div className="mt-8 w-full">
-                            <TabsContents>
-                                <TabsContent value="account">
-                                    <TradeHistory sectionClassName="p-0 min-h-auto" containerClassName="py-0 md:px-0" />
-                                </TabsContent>
-                                <TabsContent value="password">
-                                    <Leaderboard sectionClassName="p-0 min-h-auto" containerClassName="py-0 md:px-0" />
-                                </TabsContent>
-                            </TabsContents>
+                            <TabsContent value="account">
+                                <TradeHistory sectionClassName="p-0 min-h-auto" containerClassName="py-0 md:px-0" />
+                            </TabsContent>
+                            <TabsContent value="password">
+                                <Leaderboard sectionClassName="p-0 min-h-auto" containerClassName="py-0 md:px-0" />
+                            </TabsContent>
                         </div>
                     </Tabs>
                 </div>

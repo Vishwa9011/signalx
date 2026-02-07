@@ -10,8 +10,7 @@ import CustomButton from '@/components/ui/CustomButton';
 import { useRoundStore } from '@/features/market/store/roundStore';
 import useBlockchainWrite from '@/features/web3/hooks/useBlockchainWrite';
 import OutlineExclamationCircle from '@/constants/svgs/OutlineExclamationCircle';
-import { Dialog, DialogClose, DialogContent, DialogTrigger } from '@/components/shared/animate-ui/components/radix/dialog';
-import { DialogTitle } from '@/components/shared/animate-ui/primitives/radix/dialog';
+import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 type ConfirmSellModalProps = {
     bet: ActiveBet;
