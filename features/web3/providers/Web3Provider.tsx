@@ -5,10 +5,10 @@ import type { ReactNode } from "react";
 import { createAppKit } from "@reown/appkit/react";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 import { cookieStorage, createStorage, WagmiProvider } from "wagmi";
-import { type AppKitNetwork, bscTestnet } from "@reown/appkit/networks";
+import { type AppKitNetwork, sepolia } from "@reown/appkit/networks";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
-export const DEFAULT_NETWORK = bscTestnet;
+export const DEFAULT_NETWORK = sepolia;
 
 const queryClient = new QueryClient();
 const networks: [AppKitNetwork, ...AppKitNetwork[]] = [DEFAULT_NETWORK];

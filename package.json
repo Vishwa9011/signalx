@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@pythnetwork/hermes-client": "^3.1.0",
     "@radix-ui/react-select": "^2.2.6",
     "@radix-ui/react-visually-hidden": "^1.2.4",
     "@reown/appkit": "^1.8.17",
