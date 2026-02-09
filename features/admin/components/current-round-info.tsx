@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import SectionCard from './SectionCard';
-import RoundControl from './RoundControl';
+import SectionCard from './section-card';
+import RoundControl from './round-control';
 import { formatCurrency, formatTime } from '@/lib';
 import type { Dispatch, SetStateAction } from 'react';
-import { getDirectionText } from '@/lib/trade.helpers';
-import useCountdownTimer from '@/features/admin/hooks/useCountdownTimer';
-import { RoundStatCard, StatDivider } from './RoundStatCard';
+import { getDirectionText } from '@/lib/trade-helpers';
+import useCountdownTimer from '@/features/admin/hooks/use-countdown-timer';
+import { RoundStatCard, StatDivider } from './round-stat-card';
 
 type AdvancedOptionsToggleProps = {
     show: boolean;
@@ -37,7 +37,7 @@ function AdvancedOptionsToggle({ show, setShow }: AdvancedOptionsToggleProps) {
     );
 }
 import { FiChevronDown, FiChevronUp, FiAlertTriangle } from 'react-icons/fi';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useRoundStore } from '@/features/market/store/round-store';
 
 export default function CurrentRoundInfo() {
     const { round } = useRoundStore();

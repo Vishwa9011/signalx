@@ -1,7 +1,7 @@
 'use client';
 
 import type { TradeHistory } from '@/types';
-import { TradeHistoryRow } from './TradeHistoryRow';
+import { TradeHistoryRow } from './trade-history-row';
 
 type TradeHistoryTableProps = {
     trades: TradeHistory[];

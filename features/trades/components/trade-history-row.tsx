@@ -2,7 +2,7 @@
 
 import { cn } from '@/lib/utils';
 import { Direction, type TradeHistory } from '@/types';
-import { getDirectionText, getTradeStatusText, calculatePnL } from '@/lib/trade.helpers';
+import { getDirectionText, getTradeStatusText, calculatePnL } from '@/lib/trade-helpers';
 
 type TradeHistoryRowProps = {
     trade: TradeHistory;

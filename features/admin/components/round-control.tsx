@@ -2,9 +2,9 @@
 
 import { toast } from 'sonner';
 import { useCallback, useMemo } from 'react';
-import { useRoundStore } from '@/features/market/store/roundStore';
-import useNetworkConfig from '@/features/web3/hooks/useNetworkData';
-import useRoundControls from '@/features/admin/hooks/useRoundControls';
+import { useRoundStore } from '@/features/market/store/round-store';
+import useNetworkConfig from '@/features/web3/hooks/use-network-data';
+import useRoundControls from '@/features/admin/hooks/use-round-controls';
 import { getPythLatestPrice, getPythPriceForTimestamp } from '@/features/market/api';
 
 type Variant = 'green' | 'orange';

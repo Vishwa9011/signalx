@@ -1,7 +1,7 @@
 "use client";
 
-import { bitcoinStore } from "@/features/market/store/bitcoinStore";
-import { useRoundStore } from "@/features/market/store/roundStore";
+import { bitcoinStore } from "@/features/market/store/bitcoin-store";
+import { useRoundStore } from "@/features/market/store/round-store";
 import type { BackendPricePointType } from "@/types";
 import { useQuery } from "@tanstack/react-query";
 import { env } from "@/lib";

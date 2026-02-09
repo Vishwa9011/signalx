@@ -3,13 +3,13 @@
 import { cn } from '@/lib/utils';
 import { useAccount } from 'wagmi';
 import { useEffect, useState } from 'react';
-import { useTradeHistory } from '@/features/trades/hooks/useTradeHistory';
-import { EmptyState } from '@/features/trades/components/EmptyState';
-import { calculatePaginationInfo } from '@/lib/filter-pagination.helpers';
-import { TradeHistoryTable } from '@/features/trades/components/TradeHistoryTable';
-import { TradeHistoryFilters } from '@/features/trades/components/TradeHistoryFilters';
-import { TradeHistoryPagination } from '@/features/trades/components/TradeHistoryPagination';
-import TradeNotFound from '@/features/trades/components/TradenotFound';
+import { useTradeHistory } from '@/features/trades/hooks/use-trade-history';
+import { EmptyState } from '@/features/trades/components/empty-state';
+import { calculatePaginationInfo } from '@/lib/filter-pagination-helpers';
+import { TradeHistoryTable } from '@/features/trades/components/trade-history-table';
+import { TradeHistoryFilters } from '@/features/trades/components/trade-history-filters';
+import { TradeHistoryPagination } from '@/features/trades/components/trade-history-pagination';
+import TradeNotFound from '@/features/trades/components/tradenot-found';
 
 type TimeFilter = 'all_time' | 'this_month';
 

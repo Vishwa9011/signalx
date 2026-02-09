@@ -1,6 +1,6 @@
 'use client';
 
-import LoadingMainShimmer from './LoadingMainShimmer';
+import LoadingMainShimmer from './loading-main-shimmer';
 
 const GlobalLoader = () => {
     return (

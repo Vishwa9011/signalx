@@ -3,10 +3,10 @@
 import { useEffect, useCallback, useMemo } from 'react';
 
 import { formatAndCategorizeBets, formatRoundData } from '@/lib';
-import useNetworkConfig from '@/features/web3/hooks/useNetworkData';
-import { useRoundStore } from '@/features/market/store/roundStore';
-import useBlockchainRead from '@/features/web3/hooks/useBlockchainRead';
-import useBlockchainEvent from '@/features/web3/hooks/useBlockchainEvent';
+import useNetworkConfig from '@/features/web3/hooks/use-network-data';
+import { useRoundStore } from '@/features/market/store/round-store';
+import useBlockchainRead from '@/features/web3/hooks/use-blockchain-read';
+import useBlockchainEvent from '@/features/web3/hooks/use-blockchain-event';
 import type { Bet, Round } from '@/types';
 
 export const useRound = () => {

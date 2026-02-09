@@ -3,9 +3,9 @@
 import { toast } from 'sonner';
 import { parseUnits } from 'viem';
 import { useCallback } from 'react';
-import useNetworkConfig from '@/features/web3/hooks/useNetworkData';
-import { useRoundStore } from '@/features/market/store/roundStore';
-import useBlockchainWrite from '@/features/web3/hooks/useBlockchainWrite';
+import useNetworkConfig from '@/features/web3/hooks/use-network-data';
+import { useRoundStore } from '@/features/market/store/round-store';
+import useBlockchainWrite from '@/features/web3/hooks/use-blockchain-write';
 
 export const ROUND_DURATION = 60;
 

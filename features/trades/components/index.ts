@@ -1,8 +1,8 @@
 'use client';
 
 // Trade History Components
-export { TradeHistoryFilters } from './TradeHistoryFilters';
-export { TradeHistoryTable } from './TradeHistoryTable';
-export { TradeHistoryRow } from './TradeHistoryRow';
-export { TradeHistoryPagination } from './TradeHistoryPagination';
-export { EmptyState } from './EmptyState';
+export { TradeHistoryFilters } from './trade-history-filters';
+export { TradeHistoryTable } from './trade-history-table';
+export { TradeHistoryRow } from './trade-history-row';
+export { TradeHistoryPagination } from './trade-history-pagination';
+export { EmptyState } from './empty-state';

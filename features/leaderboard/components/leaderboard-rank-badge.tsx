@@ -1,8 +1,8 @@
 'use client';
 
-import Rank1Medal from '@/constants/svgs/Rank1Medal';
-import Rank2Medal from '@/constants/svgs/Rank2Medal';
-import Rank3Medal from '@/constants/svgs/Rank3Medal';
+import Rank1Medal from '@/constants/svgs/rank1-medal';
+import Rank2Medal from '@/constants/svgs/rank2-medal';
+import Rank3Medal from '@/constants/svgs/rank3-medal';
 
 type LeaderboardRankBadgeProps = {
     rank: number;

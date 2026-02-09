@@ -3,12 +3,12 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
-import CloseIcon from '@/constants/svgs/CloseIcon';
-import NavIcon from '@/constants/svgs/NavIcon';
+import CloseIcon from '@/constants/svgs/close-icon';
+import NavIcon from '@/constants/svgs/nav-icon';
 import { useAppKit, useAppKitAccount } from '@reown/appkit/react';
 import { cn, formatCurrency } from '@/lib';
-import WalletIcon from '@/constants/svgs/WalletIcon';
-import useBalance from '@/features/web3/hooks/useBalance';
+import WalletIcon from '@/constants/svgs/wallet-icon';
+import useBalance from '@/features/web3/hooks/use-balance';
 
 const Header = () => {
     const { open } = useAppKit();

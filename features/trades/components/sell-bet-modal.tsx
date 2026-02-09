@@ -3,10 +3,10 @@
 import { Direction } from '@/types';
 import { IoClose } from 'react-icons/io5';
 import { cn, formatCurrency } from '@/lib';
-import CustomButton from '@/components/ui/CustomButton';
-import ConfirmSellModal from './ConfirmSellModal';
-import ArrowRightUP from '@/constants/svgs/ArrowRightUP';
-import useUserActiveBets from '@/features/trades/hooks/useUserActiveBets';
+import CustomButton from '@/components/ui/custom-button';
+import ConfirmSellModal from './confirm-sell-modal';
+import ArrowRightUP from '@/constants/svgs/arrow-right-up';
+import useUserActiveBets from '@/features/trades/hooks/use-user-active-bets';
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { cn } from '@/lib';
-import { useLeaderboard } from '@/features/leaderboard/hooks/useLeaderboard';
+import { useLeaderboard } from '@/features/leaderboard/hooks/use-leaderboard';
 import { LeaderboardHeader, LeaderboardTable, LeaderboardEmptyState } from '@/features/leaderboard/components';
 
 type LeaderboardType = {

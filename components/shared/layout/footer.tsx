@@ -1,7 +1,7 @@
 'use client';
 
-import { socialLinks } from '@/constants/socialLink';
-import Twitter from '@/constants/svgs/Twitter';
+import { socialLinks } from '@/constants/social-link';
+import Twitter from '@/constants/svgs/twitter';
 import Link from 'next/link';
 
 const Footer = () => {

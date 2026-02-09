@@ -1,9 +1,9 @@
 'use client';
 
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useRoundStore } from '@/features/market/store/round-store';
 import { FaArrowDown, FaArrowUp } from 'react-icons/fa6';
 import { cn, formatCurrency } from '@/lib';
-import UserInvestment from './UserInvestment';
+import UserInvestment from './user-investment';
 
 //  (roundPools.upPool / roundPools.totalPool) * 100 probablity
 const PoolInfo = () => {

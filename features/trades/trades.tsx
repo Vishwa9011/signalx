@@ -3,22 +3,22 @@
 import { useEffect } from "react";
 import dynamic from "next/dynamic";
 
-import BetPercentageIndicator from "@/features/trades/components/BetPercentageIndicator";
-import PoolInfo from "@/features/trades/components/PoolInfo";
+import BetPercentageIndicator from "@/features/trades/components/bet-percentage-indicator";
+import PoolInfo from "@/features/trades/components/pool-info";
 const BitcoinChart = dynamic(
-  () => import("@/features/trades/components/BitcoinChart"),
+  () => import("@/features/trades/components/bitcoin-chart"),
   { ssr: false },
 );
-import PriceTimeInfo from "@/features/trades/components/PriceTimeInfo";
-import TradeResultModal from "@/features/trades/components/TradeResultModal";
-import BettingInput from "@/features/trades/components/BettingInput";
-import RoundMessageUpdates from "@/features/trades/components/RoundMessageUpdates";
-import QuestionHeader from "@/features/trades/components/QuestionHeader";
+import PriceTimeInfo from "@/features/trades/components/price-time-info";
+import TradeResultModal from "@/features/trades/components/trade-result-modal";
+import BettingInput from "@/features/trades/components/betting-input";
+import RoundMessageUpdates from "@/features/trades/components/round-message-updates";
+import QuestionHeader from "@/features/trades/components/question-header";
 
 import { handleFetchRoundDetails } from "@/features/market/api";
-import { useRound } from "@/features/market/hooks/useRound";
-import { useSocket } from "@/features/market/hooks/useSocket";
-import useRoundPools from "@/features/market/hooks/useRoundPools";
+import { useRound } from "@/features/market/hooks/use-round";
+import { useSocket } from "@/features/market/hooks/use-socket";
+import useRoundPools from "@/features/market/hooks/use-round-pools";
 import { useInitializeBitcoinChartData } from "../market/hooks/use-initialize-bitcoin-chart-data";
 
 // ----------------- Shared UI Blocks -----------------

@@ -1,8 +1,8 @@
 'use client';
 
 import { cn, formatCurrency, getPnLSign } from '@/lib';
-import { getProfitColor } from '@/lib/getProfitColor';
-import useUserActiveBets from '@/features/trades/hooks/useUserActiveBets';
+import { getProfitColor } from '@/lib/get-profit-color';
+import useUserActiveBets from '@/features/trades/hooks/use-user-active-bets';
 
 const UserInvestment = () => {
     const { summary } = useUserActiveBets();

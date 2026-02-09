@@ -3,9 +3,9 @@
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { IoArrowBack } from 'react-icons/io5';
-import DisconnectIcon from '@/constants/svgs/DisconnectIcon';
+import DisconnectIcon from '@/constants/svgs/disconnect-icon';
 import { useAppKit, useAppKitAccount } from '@reown/appkit/react';
-import ProfileIcon from '@/constants/svgs/ProfileIcon';
+import ProfileIcon from '@/constants/svgs/profile-icon';
 import { truncateString } from '@/lib';
 import {
     Tabs,
@@ -13,8 +13,8 @@ import {
     TabsList,
     TabsTrigger,
 } from '@/components/ui/tabs';
-import TradeHistory from '@/features/trades/TradeHistory';
-import Leaderboard from '@/features/leaderboard/Leaderboard';
+import TradeHistory from '@/features/trades/trade-history';
+import Leaderboard from '@/features/leaderboard/leaderboard';
 import { useEffect } from 'react';
 
 const Profile = () => {

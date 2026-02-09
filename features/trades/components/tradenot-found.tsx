@@ -1,6 +1,6 @@
 'use client';
 
-import DataNotFoundIcon from '@/constants/svgs/DataNotFoundIcon';
+import DataNotFoundIcon from '@/constants/svgs/data-not-found-icon';
 import Link from 'next/link';
 import { IoArrowForward } from 'react-icons/io5';
 

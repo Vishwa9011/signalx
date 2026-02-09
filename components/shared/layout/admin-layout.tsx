@@ -1,7 +1,7 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import AppProviders from '@/components/shared/AppProviders';
+import AppProviders from '@/components/shared/app-providers';
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   return (

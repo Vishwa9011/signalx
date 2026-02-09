@@ -1,8 +1,8 @@
 'use client';
 
-export { LeaderboardHeader } from './LeaderboardHeader';
-export { LeaderboardRankBadge } from './LeaderboardRankBadge';
-export { LeaderboardTableHeader } from './LeaderboardTableHeader';
-export { LeaderboardRow } from './LeaderboardRow';
-export { LeaderboardTable } from './LeaderboardTable';
-export { LeaderboardEmptyState } from './LeaderboardEmptyState';
+export { LeaderboardHeader } from './leaderboard-header';
+export { LeaderboardRankBadge } from './leaderboard-rank-badge';
+export { LeaderboardTableHeader } from './leaderboard-table-header';
+export { LeaderboardRow } from './leaderboard-row';
+export { LeaderboardTable } from './leaderboard-table';
+export { LeaderboardEmptyState } from './leaderboard-empty-state';

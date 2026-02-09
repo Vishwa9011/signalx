@@ -4,11 +4,11 @@ import { useEffect, useMemo, useRef } from 'react';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, LineElement, LinearScale, PointElement, TimeScale, Filler, Chart } from 'chart.js';
 import 'chartjs-adapter-date-fns';
-import { bitcoinStore } from '@/features/market/store/bitcoinStore';
-import { useBitcoinData } from '@/features/market/hooks/useBitcoinData';
-import BitcoinChartSkelton from '@/components/shared/loading/BitcoinChartSkelton';
-import { useRoundStore } from '@/features/market/store/roundStore';
-import usePageVisibility from '@/features/trades/hooks/usePageVisibility';
+import { bitcoinStore } from '@/features/market/store/bitcoin-store';
+import { useBitcoinData } from '@/features/market/hooks/use-bitcoin-data';
+import BitcoinChartSkelton from '@/components/shared/loading/bitcoin-chart-skelton';
+import { useRoundStore } from '@/features/market/store/round-store';
+import usePageVisibility from '@/features/trades/hooks/use-page-visibility';
 
 ChartJS.register(LineElement, LinearScale, PointElement, TimeScale, Filler);
 

@@ -1,11 +1,11 @@
 'use client';
 
 import type { Config } from 'wagmi';
-import { ERC20_ABI } from '@/features/web3/contracts/abi/ERC20';
+import { ERC20_ABI } from '@/features/web3/contracts/abi/erc20';
 import { SIGNALX_ABI } from '@/features/web3/contracts/abi/signalx';
 import type { ContractFunctionArgs, ContractFunctionName } from 'viem';
 import { useReadContract, type UseReadContractParameters } from 'wagmi';
-import useNetworkConfig from './useNetworkData';
+import useNetworkConfig from './use-network-data';
 
 // Type aliases for contract ABIs
 type ERC20Abi = typeof ERC20_ABI;

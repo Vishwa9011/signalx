@@ -1,11 +1,11 @@
 'use client';
 
 import { Direction } from '@/types';
-import { useTradeStore } from '@/features/market/store/tradeStore';
-import useBlockchainRead from '@/features/web3/hooks/useBlockchainRead';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useTradeStore } from '@/features/market/store/trade-store';
+import useBlockchainRead from '@/features/web3/hooks/use-blockchain-read';
+import { useRoundStore } from '@/features/market/store/round-store';
 import { useEffect } from 'react';
-import useRoundPools from '@/features/market/hooks/useRoundPools';
+import useRoundPools from '@/features/market/hooks/use-round-pools';
 
 const ResultText = ['LOSE', 'WON', 'DRAW'] as const;
 type ResultTextType = (typeof ResultText)[number];

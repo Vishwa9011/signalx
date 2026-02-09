@@ -1,8 +1,8 @@
 'use client';
 
 import type { UserStats } from '@/types';
-import { LeaderboardTableHeader } from './LeaderboardTableHeader';
-import { LeaderboardRow } from './LeaderboardRow';
+import { LeaderboardTableHeader } from './leaderboard-table-header';
+import { LeaderboardRow } from './leaderboard-row';
 
 type LeaderboardTableProps = {
     data: UserStats[];

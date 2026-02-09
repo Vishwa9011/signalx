@@ -7,13 +7,13 @@ export * from './message-state';
 export * from './formatters';
 
 // Trade-related helpers
-export * from './trade.helpers';
+export * from './trade-helpers';
 
 // String utilities
-export * from './string.helpers';
+export * from './string-helpers';
 
 // Filtering and pagination
-export * from './filter-pagination.helpers';
+export * from './filter-pagination-helpers';
 
 // React utilities
-export * from './react.helpers';
+export * from './react-helpers';

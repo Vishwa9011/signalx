@@ -1,8 +1,8 @@
 'use client';
 
-import useTimer from '@/features/trades/hooks/useTimer';
+import useTimer from '@/features/trades/hooks/use-timer';
 // import { Bars } from 'react-loader-spinner';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useRoundStore } from '@/features/market/store/round-store';
 // import { buildStyles, CircularProgressbarWithChildren } from 'react-circular-progressbar';
 
 type CountdownTimerProps = {

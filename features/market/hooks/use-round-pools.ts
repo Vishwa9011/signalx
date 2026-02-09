@@ -1,8 +1,8 @@
 'use client';
 
-import { useRoundStore } from '@/features/market/store/roundStore';
-import useBlockchainRead from '@/features/web3/hooks/useBlockchainRead';
-import useNetworkConfig from '@/features/web3/hooks/useNetworkData';
+import { useRoundStore } from '@/features/market/store/round-store';
+import useBlockchainRead from '@/features/web3/hooks/use-blockchain-read';
+import useNetworkConfig from '@/features/web3/hooks/use-network-data';
 import { formatRoundPoolData } from '@/lib';
 import { useEffect, useMemo } from 'react';
 

@@ -1,7 +1,7 @@
 'use client';
 
 import { getMessage, type MessageType } from '@/lib';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useRoundStore } from '@/features/market/store/round-store';
 
 const transitionStates = [
     'STARTING_NEW_ROUND',

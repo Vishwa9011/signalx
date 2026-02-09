@@ -1,6 +1,6 @@
 import axios from "axios";
-import { axiosInstance } from "./requestHandler";
-import { useRoundStore } from "@/features/market/store/roundStore";
+import { axiosInstance } from "./request-handler";
+import { useRoundStore } from "@/features/market/store/round-store";
 import { env } from "@/lib";
 import type { MessageType } from "@/lib/message-state";
 

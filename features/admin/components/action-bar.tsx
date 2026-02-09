@@ -1,9 +1,9 @@
 'use client';
 
-import SectionCard from './SectionCard';
+import SectionCard from './section-card';
 import { useMutation, useQuery } from '@tanstack/react-query';
 import { getRoundDetails, operateRound } from '@/features/market/api';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useRoundStore } from '@/features/market/store/round-store';
 
 export default function ActionBar() {
     const { triggerRoundRefetch } = useRoundStore();

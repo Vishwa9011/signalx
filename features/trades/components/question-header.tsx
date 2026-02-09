@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import InfoIcon from '@/constants/svgs/InfoIcon';
-import BitcoinIcon from '@/constants/svgs/BitcoinIcon';
+import InfoIcon from '@/constants/svgs/info-icon';
+import BitcoinIcon from '@/constants/svgs/bitcoin-icon';
 import { HOW_IT_WORKS_DATA } from '@/constants/how-it-works';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 

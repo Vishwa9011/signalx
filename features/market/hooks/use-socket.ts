@@ -1,8 +1,8 @@
 'use client';
 
 import { env, type MessageType } from '@/lib';
-import { bitcoinStore } from '@/features/market/store/bitcoinStore';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { bitcoinStore } from '@/features/market/store/bitcoin-store';
+import { useRoundStore } from '@/features/market/store/round-store';
 import type { BackendPricePointType } from '@/types';
 import { useEffect, useRef, useState } from 'react';
 import { io, Socket } from 'socket.io-client';

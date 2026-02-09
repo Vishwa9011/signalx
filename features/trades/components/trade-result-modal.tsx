@@ -3,9 +3,9 @@
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
 import trophyAnimation from '@/assets/trophy.json';
-import useTradeResult from '@/features/trades/hooks/useTradeResult';
+import useTradeResult from '@/features/trades/hooks/use-trade-result';
 import errorAnimation from '@/assets/error-monster-strikes-again-lottie-animation.json';
-import { useTradeStore } from '@/features/market/store/tradeStore';
+import { useTradeStore } from '@/features/market/store/trade-store';
 import { formatCurrency, getDirectionText, getPnLSign } from '@/lib';
 
 const MODAL_CONFIG = {

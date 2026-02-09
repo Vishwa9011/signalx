@@ -6,10 +6,10 @@ import type { ActiveBet } from '@/types';
 import { Direction } from '@/types';
 import { IoClose } from 'react-icons/io5';
 import { cn, formatCurrency } from '@/lib';
-import CustomButton from '@/components/ui/CustomButton';
-import { useRoundStore } from '@/features/market/store/roundStore';
-import useBlockchainWrite from '@/features/web3/hooks/useBlockchainWrite';
-import OutlineExclamationCircle from '@/constants/svgs/OutlineExclamationCircle';
+import CustomButton from '@/components/ui/custom-button';
+import { useRoundStore } from '@/features/market/store/round-store';
+import useBlockchainWrite from '@/features/web3/hooks/use-blockchain-write';
+import OutlineExclamationCircle from '@/constants/svgs/outline-exclamation-circle';
 import { Dialog, DialogClose, DialogContent, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 
 type ConfirmSellModalProps = {

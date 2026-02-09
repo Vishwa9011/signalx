@@ -1,5 +1,5 @@
 import type { Address } from 'viem';
-import { DEFAULT_NETWORK } from '@/features/web3/providers/Web3Provider';
+import { DEFAULT_NETWORK } from '@/features/web3/providers/web3-provider';
 
 type NetworkConfig = {
     token: Address;

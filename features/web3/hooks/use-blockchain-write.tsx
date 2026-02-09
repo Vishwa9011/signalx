@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import { useAccount, usePublicClient, useWriteContract } from 'wagmi';
 import { BaseError, ContractFunctionRevertedError, type ContractFunctionArgs, type ContractFunctionName } from 'viem';
-import { ERC20_ABI } from '@/features/web3/contracts/abi/ERC20';
+import { ERC20_ABI } from '@/features/web3/contracts/abi/erc20';
 import { SIGNALX_ABI } from '@/features/web3/contracts/abi/signalx';
-import useNetworkConfig from './useNetworkData';
+import useNetworkConfig from './use-network-data';
 import { toast } from 'sonner';
 
 /* -----------------------------------

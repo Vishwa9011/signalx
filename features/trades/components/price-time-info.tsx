@@ -1,8 +1,8 @@
 'use client';
 
 import { formatCurrency } from '@/lib';
-import CountdownTimer from './CountdownTimer';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import CountdownTimer from './countdown-timer';
+import { useRoundStore } from '@/features/market/store/round-store';
 
 const PriceTimeInfo = () => {
     const { round } = useRoundStore();

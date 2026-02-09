@@ -1,9 +1,9 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import AppProviders from '@/components/shared/AppProviders';
-import Header from '@/components/shared/layout/Header';
-import Footer from '@/components/shared/layout/Footer';
+import AppProviders from '@/components/shared/app-providers';
+import Header from '@/components/shared/layout/header';
+import Footer from '@/components/shared/layout/footer';
 
 export default function PublicLayout({ children }: { children: ReactNode }) {
   return (

@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import AdminLayout from '@/components/shared/layout/AdminLayout';
+import AdminLayout from '@/components/shared/layout/admin-layout';
 
 export default function AdminRouteLayout({ children }: { children: ReactNode }) {
   return <AdminLayout>{children}</AdminLayout>;

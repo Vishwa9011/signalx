@@ -4,8 +4,8 @@ import { useAccount } from 'wagmi';
 import { zeroAddress } from 'viem';
 import type { TradeHistory } from '@/types';
 import { formatTradeHistory } from '@/lib';
-import useNetworkConfig from '@/features/web3/hooks/useNetworkData';
-import useBlockchainRead from '@/features/web3/hooks/useBlockchainRead';
+import useNetworkConfig from '@/features/web3/hooks/use-network-data';
+import useBlockchainRead from '@/features/web3/hooks/use-blockchain-read';
 import { useMemo, useState, useCallback } from 'react';
 
 const LIMIT_PER_PAGE = 10n;

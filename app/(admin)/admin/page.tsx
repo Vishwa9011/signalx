@@ -1,6 +1,6 @@
 'use client';
 
-import AdminDashboard from '@/features/admin/AdminDashboard';
+import AdminDashboard from '@/features/admin/admin-dashboard';
 
 export default function AdminPage() {
   return <AdminDashboard />;

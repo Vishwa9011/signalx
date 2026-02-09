@@ -1,8 +1,8 @@
 'use client';
 
-import SectionCard from './SectionCard';
-import PendingRoundRow from './PendingRoundRow';
-import usePendingResultRounds from '@/features/market/hooks/usePendingResultRounds';
+import SectionCard from './section-card';
+import PendingRoundRow from './pending-round-row';
+import usePendingResultRounds from '@/features/market/hooks/use-pending-result-rounds';
 
 export default function PendingRoundsTable() {
     const { pendingRounds, isPending, refetch } = usePendingResultRounds();

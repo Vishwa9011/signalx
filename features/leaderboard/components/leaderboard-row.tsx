@@ -2,7 +2,7 @@
 
 import { cn, formatCurrency, truncateString } from '@/lib';
 import type { UserStats } from '@/types';
-import { LeaderboardRankBadge } from './LeaderboardRankBadge';
+import { LeaderboardRankBadge } from './leaderboard-rank-badge';
 
 type LeaderboardRowProps = {
     userStats: UserStats;

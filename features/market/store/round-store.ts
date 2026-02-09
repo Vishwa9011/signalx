@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import type { Round, RoundBets, RoundPools } from '@/types';
-import { Direction } from '@/types/contract.types';
+import { Direction } from '@/types/contract-types';
 import type { MessageType } from '@/lib/message-state';
 
 const DEFAULT_ROUND: Round = {

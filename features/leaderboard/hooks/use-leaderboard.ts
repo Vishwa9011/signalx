@@ -3,8 +3,8 @@
 import { useMemo } from 'react';
 import { formatLeaderboard } from '@/lib';
 import type { UserStats } from '@/types';
-import useNetworkConfig from '@/features/web3/hooks/useNetworkData';
-import useBlockchainRead from '@/features/web3/hooks/useBlockchainRead';
+import useNetworkConfig from '@/features/web3/hooks/use-network-data';
+import useBlockchainRead from '@/features/web3/hooks/use-blockchain-read';
 
 export const useLeaderboard = () => {
     const { decimals } = useNetworkConfig();

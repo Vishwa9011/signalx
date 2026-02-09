@@ -3,7 +3,7 @@
 // import { calcBetPercentage, cn } from '@/lib';
 import type { CSSProperties } from 'react';
 import { cn } from '@/lib';
-import { useRoundStore } from '@/features/market/store/roundStore';
+import { useRoundStore } from '@/features/market/store/round-store';
 
 type BetPercentageIndicatorProps = {};
 

@@ -2,7 +2,7 @@
 
 import type { ReactNode } from 'react';
 import { Toaster } from 'sonner';
-import Web3Provider from '@/features/web3/providers/Web3Provider';
+import Web3Provider from '@/features/web3/providers/web3-provider';
 
 export default function AppProviders({ children }: { children: ReactNode }) {
   return (

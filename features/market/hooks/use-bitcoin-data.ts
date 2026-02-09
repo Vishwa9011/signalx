@@ -1,7 +1,7 @@
 "use client";
 
-import { bitcoinStore } from "@/features/market/store/bitcoinStore";
-import { useHistoricBitcoinDataQuery } from "./useHistoricBitcoinDataQuery";
+import { bitcoinStore } from "@/features/market/store/bitcoin-store";
+import { useHistoricBitcoinDataQuery } from "./use-historic-bitcoin-data-query";
 import { useEffect } from "react";
 
 export const useBitcoinData = () => {
